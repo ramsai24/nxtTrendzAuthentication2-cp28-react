@@ -6,7 +6,7 @@ const Header = props => {
   const onClickLogout = () => {
     Cookie.remove('jwt_token')
     const {history} = props
-    history.replace('/')
+    history.replace('/login')
   }
 
   return (
@@ -43,7 +43,7 @@ const Header = props => {
               <li className="nav-menu-item">Home</li>
             </Link>
 
-            <Link to="/Products">
+            <Link to="/products">
               <li className="nav-menu-item">Products</li>
             </Link>
             <Link to="/cart">
